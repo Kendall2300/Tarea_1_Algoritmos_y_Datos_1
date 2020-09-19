@@ -28,7 +28,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Codigo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Servidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Servidor" />
+      <module name="Codigo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -40,6 +54,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Servidor" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600543462802</updated>
-      <workItem from="1600543464135" duration="1041000" />
+      <workItem from="1600543464135" duration="2676000" />
     </task>
     <servers />
   </component>
@@ -61,6 +81,22 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="460" y="139" key="FileChooserDialogImpl/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600543615475" />
+    <state width="1315" height="192" key="GridCell.Tab.0.bottom" timestamp="1600546101935">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state width="1315" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
+    <state width="1315" height="192" key="GridCell.Tab.0.center" timestamp="1600546101935">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state width="1315" height="192" key="GridCell.Tab.0.center/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
+    <state width="1315" height="192" key="GridCell.Tab.0.left" timestamp="1600546101935">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state width="1315" height="192" key="GridCell.Tab.0.left/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
+    <state width="1315" height="192" key="GridCell.Tab.0.right" timestamp="1600546101935">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state width="1315" height="192" key="GridCell.Tab.0.right/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
     <state x="317" y="4" key="new project wizard" timestamp="1600543512772">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
