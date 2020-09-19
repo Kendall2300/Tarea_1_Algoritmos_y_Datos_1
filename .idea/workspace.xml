@@ -27,8 +27,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Servidor">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Codigo" />
@@ -56,8 +59,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Servidor" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -69,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600543462802</updated>
-      <workItem from="1600543464135" duration="2676000" />
+      <workItem from="1600543464135" duration="6507000" />
     </task>
     <servers />
   </component>
@@ -77,26 +80,34 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="485" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1600550115072">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="485" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600550115072" />
     <state x="460" y="139" key="FileChooserDialogImpl" timestamp="1600543615475">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="460" y="139" key="FileChooserDialogImpl/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600543615475" />
-    <state width="1315" height="192" key="GridCell.Tab.0.bottom" timestamp="1600546101935">
+    <state width="1315" height="192" key="GridCell.Tab.0.bottom" timestamp="1600551899010">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
-    <state width="1315" height="192" key="GridCell.Tab.0.center" timestamp="1600546101935">
+    <state width="1315" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600551899010" />
+    <state width="1315" height="192" key="GridCell.Tab.0.center" timestamp="1600551899010">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="192" key="GridCell.Tab.0.center/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
-    <state width="1315" height="192" key="GridCell.Tab.0.left" timestamp="1600546101935">
+    <state width="1315" height="192" key="GridCell.Tab.0.center/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600551899010" />
+    <state width="1315" height="192" key="GridCell.Tab.0.left" timestamp="1600551899010">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="192" key="GridCell.Tab.0.left/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
-    <state width="1315" height="192" key="GridCell.Tab.0.right" timestamp="1600546101935">
+    <state width="1315" height="192" key="GridCell.Tab.0.left/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600551899010" />
+    <state width="1315" height="192" key="GridCell.Tab.0.right" timestamp="1600551899010">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="192" key="GridCell.Tab.0.right/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600546101935" />
+    <state width="1315" height="192" key="GridCell.Tab.0.right/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600551899010" />
+    <state x="160" y="0" key="SettingsEditor" timestamp="1600549633552">
+      <screen x="0" y="0" width="1360" height="768" />
+    </state>
+    <state x="160" y="0" key="SettingsEditor/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600549633552" />
     <state x="317" y="4" key="new project wizard" timestamp="1600543512772">
       <screen x="0" y="0" width="1360" height="768" />
     </state>

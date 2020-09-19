@@ -18,7 +18,7 @@ class MarcoCliente extends JFrame{
         setVisible(true);
     }
 }
-class LaminaMarcoCliente extends JPanel{
+class LaminaMarcoCliente extends JPanel implements Runnable{
     public LaminaMarcoCliente(){
         nick=new JTextField(5);
         add(nick);
@@ -39,12 +39,39 @@ class LaminaMarcoCliente extends JPanel{
         EnviarTexto mievento=new EnviarTexto();
         miboton.addActionListener(mievento);
         add(miboton);
+
+        Thread mihilo=new Thread(this);
+        mihilo.start();
     }
+
+    @Override
+    public void run() {
+
+        try{
+            ServerSocket servidorcliente=new ServerSocket(9090);
+            Socket cliente;
+            PaqueteEnvio paqueteRecibido;
+
+            while (true){
+                cliente=servidorcliente.accept();
+                ObjectInputStream flujoentrada=new ObjectInputStream(cliente.getInputStream());
+                paqueteRecibido=(PaqueteEnvio) flujoentrada.readObject();
+
+                campochat.append("\n"+paqueteRecibido.getNick()+" :"+paqueteRecibido.getMensaje());
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private class EnviarTexto implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
+            campochat.append("\n"+"Yo: "+campo1.getText());
             try{
-                Socket misocket=new Socket("192.168.0.23",9999);
+                Socket misocket=new Socket("127.0.0.1",9999);
 
                 PaqueteEnvio datos=new PaqueteEnvio();
                 datos.setNick(nick.getText());
