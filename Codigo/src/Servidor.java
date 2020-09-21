@@ -11,7 +11,14 @@ public class Servidor {
         mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
+
+/**
+ * Crea la clase de marco, clase que se utiliza para definir limites y tamaño para la ventana de la aplicación a mostrar en pantalla.
+ */
 class Marco_Servidor extends JFrame implements Runnable{
+    /**
+     * Crea el constructor del marco que trae definido los parametros para la ventana a mostrar en pantalla.
+     */
     public Marco_Servidor(){
         setBounds(1200,300,280,350);
         JPanel milamina=new JPanel();
@@ -25,6 +32,7 @@ class Marco_Servidor extends JFrame implements Runnable{
         Thread mihilo=new Thread(this);
         mihilo.start();
     }
+
     @Override
     public void run(){
         try{

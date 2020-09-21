@@ -10,7 +10,14 @@ public class Main {
         mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
+
+/**
+ * Crea la clase de marco, clase que se utiliza para definir limites y tamaño para la ventana de la aplicación a mostrar en pantalla.
+ */
 class MarcoCliente extends JFrame{
+    /**
+     * Crea el constructor del marco que trae definido los parametros para la ventana a mostrar en pantalla. Y recibe los parametros para intrudicir el nombre del usuario la ip del destinatario y el mensaje a enviar
+     */
     public MarcoCliente(){
         setBounds(600,300,280,350);
         LaminaMarcoCliente milamina=new LaminaMarcoCliente();
@@ -18,7 +25,15 @@ class MarcoCliente extends JFrame{
         setVisible(true);
     }
 }
+
+/**
+ * Crea la case lamina que obtiene datos importantes como el nombre de usuario, la ip del destinatario, el campo donde aparece el chat
+ * el boton de enviar y el campo para escribir el mansaje.
+ */
 class LaminaMarcoCliente extends JPanel implements Runnable{
+    /**
+     * Es el constructor donde los parametros de la ventana para la aplicacion se predefinen
+     */
     public LaminaMarcoCliente(){
         nick=new JTextField(5);
         add(nick);
@@ -66,7 +81,16 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
         }
     }
 
+    /**
+     * Clase que se va a ejecutar en paralelo con el fin de llevar a cabo los procesos de enviar y recibir la
+     * informacion o mensajes entre usuarios
+     */
     private class EnviarTexto implements ActionListener{
+        /**
+         * Metodo que se encarga de construir la accion que se llevara a cabo despues de presionar el boton
+         * enviar
+         * @param e Variable de tipo excepcion que sera enviada en caso de surgir algun error
+         */
         @Override
         public void actionPerformed(ActionEvent e){
             campochat.append("\n"+"Yo: "+campo1.getText());
@@ -93,23 +117,57 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
     private JTextArea campochat;
     private JButton miboton;
 }
+
+/**
+ * Clase que almacena y define el nombre del usuario, ip y mensaje a enviar
+ */
 class PaqueteEnvio implements Serializable {
     private String nick, ip, mensaje;
+
+    /**
+     * Metodo que se utiliza para obtener el nombre del usuario
+     * @return El nombre del usuario
+     */
     public String getNick() {
         return nick;
     }
+
+    /**
+     * Metodo que se utiliza para definir el nombre del usuario
+     * @param nick Introduce un nombre de tipo String
+     */
     public void setNick(String nick) {
         this.nick = nick;
     }
+
+    /**
+     * Metodo que se utiliza para obtener la ip del destinatario
+     * @return La ip del destinatario
+     */
     public String getIp() {
         return ip;
     }
+
+    /**
+     * Metodo que se utiliza para establecer la ip del destinatario
+     * @param ip Variable de tipo String que define la ip del destinatario
+     */
     public void setIp(String ip) {
         this.ip = ip;
     }
+
+    /**
+     * Metodo que se utiliza para obtener el mensaje enviado
+     * @return El mensaje que fue enviado al destinatario
+     */
     public String getMensaje() {
         return mensaje;
     }
+
+    /**
+     * Metodo que se utiliza para obtener el mensaje enviado
+     * @param mensaje Recibe una cadena de String que sera enviada al destinatario
+     */
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
