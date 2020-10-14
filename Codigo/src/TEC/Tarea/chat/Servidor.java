@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.net.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Servidor {
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class Servidor {
  * Crea la clase de marco, clase que se utiliza para definir limites y tamaño para la ventana de la aplicación a mostrar en pantalla.
  */
 class Marco_Servidor extends JFrame implements Runnable{
+    static Logger bitacora = GestorBitacora.getBitacora("TEC.Tarea.chat.Main","bitacoraServidor.txt", Level.SEVERE);
     /**
      * Crea el constructor del marco que trae definido los parametros para la ventana a mostrar en pantalla.
      */
@@ -58,7 +61,9 @@ class Marco_Servidor extends JFrame implements Runnable{
                 misocket.close();
             }
         } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
+            bitacora.info("Excepcion clase no encontrada: "+e);
+            bitacora.severe("Error clase no encontrada: "+e);
+            //e.printStackTrace();
         }
     }
     private JTextArea areatexto;

@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +34,7 @@ class MarcoCliente extends JFrame{
  * el boton de enviar y el campo para escribir el mansaje.
  */
 class LaminaMarcoCliente extends JPanel implements Runnable{
+    static Logger bitacora = GestorBitacora.getBitacora("TEC.Tarea.chat.Main","bitacoraMain.txt", Level.SEVERE);
     /**
      * Es el constructor donde los parametros de la ventana para la aplicacion se predefinen
      */
@@ -76,9 +79,10 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
                 campochat.append("\n"+paqueteRecibido.getNick()+" :"+paqueteRecibido.getMensaje());
 
             }
-
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            bitacora.fine("Info del socket servidor: "+e);
+            bitacora.severe("Exception try server socket: "+e);
         }
     }
 
@@ -90,7 +94,7 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
         /**
          * Metodo que se encarga de construir la accion que se llevara a cabo despues de presionar el boton
          * enviar
-         * @param e Variable de tipo excepcion que sera enviada en caso de surgir algun error
+         * @param e Variable de tipo excepcion que sera enviada en caso de que aparezca algun error
          */
         @Override
         public void actionPerformed(ActionEvent e){
@@ -108,9 +112,13 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 
                 misocket.close();
             } catch (UnknownHostException unknownHostException) {
-                unknownHostException.printStackTrace();
+                bitacora.info("Estado del host: "+unknownHostException);
+                bitacora.severe("Problema ocurrido no se encuentra el servidor: "+unknownHostException);
+                //unknownHostException.printStackTrace();
             } catch (IOException ioException) {
-                ioException.printStackTrace();
+                bitacora.info("Estado de la coneccion con el servidor: "+ioException);
+                bitacora.severe("Problema ocurrido en la coneccion al servidor: "+ioException);
+                //ioException.printStackTrace();
             }
         }
     }

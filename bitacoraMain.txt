@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-10-14T02:42:52.902983500Z</date>
+  <millis>1602643372902</millis>
+  <nanos>983500</nanos>
+  <sequence>0</sequence>
+  <logger>TEC.Tarea.chat.Main</logger>
+  <level>SEVERE</level>
+  <class>TEC.Tarea.chat.LaminaMarcoCliente$EnviarTexto</class>
+  <method>actionPerformed</method>
+  <thread>23</thread>
+  <message>Problema ocurrido en la coneccion al servidor: java.net.ConnectException: Connection refused: connect</message>
+</record>
+</log>
