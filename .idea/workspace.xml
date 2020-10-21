@@ -35,7 +35,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Servidor">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TEC.Tarea.chat.Main" />
       <module name="Codigo" />
@@ -50,21 +50,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Servidor" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -81,6 +70,8 @@
       <workItem from="1600728983594" duration="1376000" />
       <workItem from="1601082825640" duration="225000" />
       <workItem from="1602637701564" duration="5525000" />
+      <workItem from="1603237006760" duration="68000" />
+      <workItem from="1603240850310" duration="455000" />
     </task>
     <servers />
   </component>
@@ -100,22 +91,22 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="460" y="139" key="FileChooserDialogImpl/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1600543615475" />
-    <state width="1315" height="239" key="GridCell.Tab.0.bottom" timestamp="1602643872993">
+    <state width="1315" height="102" key="GridCell.Tab.0.bottom" timestamp="1603237074078">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="239" key="GridCell.Tab.0.bottom/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1602643872993" />
-    <state width="1315" height="239" key="GridCell.Tab.0.center" timestamp="1602643872993">
+    <state width="1315" height="102" key="GridCell.Tab.0.bottom/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1603237074078" />
+    <state width="1315" height="102" key="GridCell.Tab.0.center" timestamp="1603237074078">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="239" key="GridCell.Tab.0.center/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1602643872993" />
-    <state width="1315" height="239" key="GridCell.Tab.0.left" timestamp="1602643872992">
+    <state width="1315" height="102" key="GridCell.Tab.0.center/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1603237074078" />
+    <state width="1315" height="102" key="GridCell.Tab.0.left" timestamp="1603237074078">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="239" key="GridCell.Tab.0.left/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1602643872992" />
-    <state width="1315" height="239" key="GridCell.Tab.0.right" timestamp="1602643872993">
+    <state width="1315" height="102" key="GridCell.Tab.0.left/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1603237074078" />
+    <state width="1315" height="102" key="GridCell.Tab.0.right" timestamp="1603237074078">
       <screen x="0" y="0" width="1360" height="768" />
     </state>
-    <state width="1315" height="239" key="GridCell.Tab.0.right/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1602643872993" />
+    <state width="1315" height="102" key="GridCell.Tab.0.right/0.0.1360.768/-733.-768.1360.768@0.0.1360.768" timestamp="1603237074078" />
     <state width="1315" height="239" key="GridCell.Tab.1.bottom" timestamp="1602643872993">
       <screen x="0" y="0" width="1360" height="768" />
     </state>

@@ -63,7 +63,7 @@ class Marco_Servidor extends JFrame implements Runnable{
         } catch (IOException | ClassNotFoundException e) {
             bitacora.info("Excepcion clase no encontrada: "+e);
             bitacora.severe("Error clase no encontrada: "+e);
-            //e.printStackTrace();
+            
         }
     }
     private JTextArea areatexto;

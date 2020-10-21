@@ -80,7 +80,6 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 
             }
         } catch (Exception e) {
-            //e.printStackTrace();
             bitacora.fine("Info del socket servidor: "+e);
             bitacora.severe("Exception try server socket: "+e);
         }
