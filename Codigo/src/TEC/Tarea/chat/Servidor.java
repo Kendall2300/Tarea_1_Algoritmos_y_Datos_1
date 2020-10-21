@@ -61,7 +61,9 @@ class Marco_Servidor extends JFrame implements Runnable{
                 misocket.close();
             }
         } catch (IOException | ClassNotFoundException e) {
-            bitacora.info("Excepcion clase no encontrada: "+e);
+            //Escribiendo la información de la clase
+            bitacora.info("Estado de la Clase no encontrada: "+e);
+            //Atrapando la excepción de la falta de clase, la clase no se encuentra disponible.
             bitacora.severe("Error clase no encontrada: "+e);
             
         }

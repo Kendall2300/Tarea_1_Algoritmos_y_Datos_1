@@ -111,13 +111,15 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 
                 misocket.close();
             } catch (UnknownHostException unknownHostException) {
+                //Escribiendo el estado del Host.
                 bitacora.info("Estado del host: "+unknownHostException);
+                //Atrapando y escribiendo el error. El host puede no estar correctamente iniciado.
                 bitacora.severe("Problema ocurrido no se encuentra el servidor: "+unknownHostException);
-                //unknownHostException.printStackTrace();
             } catch (IOException ioException) {
-                bitacora.info("Estado de la coneccion con el servidor: "+ioException);
+                //Escribiendo el estado de la conexion con el servidor
+                bitacora.info("Estado de la conexion con el servidor: "+ioException);
+                //Atrapando la excepción, el servidor puede estar desconectado
                 bitacora.severe("Problema ocurrido en la coneccion al servidor: "+ioException);
-                //ioException.printStackTrace();
             }
         }
     }

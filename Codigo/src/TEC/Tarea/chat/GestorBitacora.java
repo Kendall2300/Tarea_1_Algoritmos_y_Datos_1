@@ -17,6 +17,7 @@ public class GestorBitacora {
             bitacora.addHandler(handler);
         }catch (IOException e){
             bitacora=Logger.getGlobal();
+            //Atrapando el error de la bitacora. Algún dato fue cambiado y no se añadio bien el nuevo dato
             bitacora.severe("Error en la creacion de la bitacora"+e.getMessage());
             return bitacora;
         }
